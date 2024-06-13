@@ -22,9 +22,9 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+## Awesome Directory Tree
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+This is a small project to create a  CLI to play with directories. Built with [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
 ## Installation
 
@@ -35,15 +35,39 @@ $ yarn install
 ## Running the app
 
 ```bash
-# development
+# build current project
+$ yarn build
+
+# run your command
+$ node ./dist/main <COMMAND> <params>
+
+# run in development mode
 $ yarn run start
 
 # watch mode
 $ yarn run start:dev
 
-# production mode
-$ yarn run start:prod
 ```
+
+### Available commands
+```bash
+# build current project
+$ yarn build
+
+# CREATE
+$ node ./dist/main CREATE <path>
+
+# LIST
+$ node ./dist/main LIST
+
+# MOVE
+$ node ./dist/main MOVE <source> <destination>
+
+# DELETE
+$ node ./dist/main DELETE <path>
+
+```
+
 
 ## Test
 
@@ -61,12 +85,6 @@ $ yarn run test:cov
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
 
 ## License
 
